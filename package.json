@@ -1,20 +1,30 @@
 {
-  "name": "react-web-template",
-  "version": "1.0.0",
-  "description": "自己搭建的一个前端脚手架，用于后面自己各个项目的使用",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Felix",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Felix-Prince/React-Web-Template.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Felix-Prince/React-Web-Template/issues"
-  },
-  "homepage": "https://github.com/Felix-Prince/React-Web-Template#readme"
+	"name": "react-web-template",
+	"version": "1.0.0",
+	"description": "自己搭建的一个前端脚手架，用于后面自己各个项目的使用",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Felix",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Felix-Prince/React-Web-Template.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Felix-Prince/React-Web-Template/issues"
+	},
+	"homepage": "https://github.com/Felix-Prince/React-Web-Template#readme",
+	"devDependencies": {
+		"@types/react": "^18.2.0",
+		"@typescript-eslint/eslint-plugin": "^5.59.1",
+		"@typescript-eslint/parser": "^5.59.1",
+		"eslint": "^8.38.0",
+		"eslint-plugin-react": "^7.32.2"
+	},
+	"dependencies": {
+		"react": "^18.2.0"
+	}
 }
