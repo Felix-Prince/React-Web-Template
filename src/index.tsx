@@ -6,6 +6,7 @@ type AppType = {
 
 const App: React.FC<AppType> = () => {
 	const a = 'xxxx'
+	const lintext = 'bbbb'
 	return <div>1111</div>
 }
 
