@@ -11,6 +11,7 @@ module.exports = {
 		'eslint:recommended', // 官方推荐的 ESLint 规则
 		'plugin:react/recommended', // React 官方 ESLint 插件的推荐规则
 		'plugin:react/jsx-runtime',
+		'plugin:jsx-a11y/recommended',
 		'plugin:react-hooks/recommended', // React Hooks 官方 ESLint 插件的推荐规则
 		'plugin:@typescript-eslint/recommended'
 	],
@@ -53,10 +54,24 @@ module.exports = {
 		// 使用函数组件，不能使用 class 组件
 		'react/prefer-stateless-function': [2, { ignorePureComponents: true }],
 		// 如果在 react 组件中没有 import React from react 就会报错
-		// TODO：这个后面考虑要去掉，因为每次都要这么写有点费劲
-		// TODO：这个后面考虑要去掉，因为每次都要这么写有点费劲
-		// TODO：这个后面考虑要去掉，因为每次都要这么写有点费劲
-		'react/react-in-jsx-scope': 'error'
+		// 保留这个，因为用到 hooks 肯定会有这个 import { useState } from 'react' 的操作
+		'react/react-in-jsx-scope': 'error',
+		//在数组或迭代器中验证JSX具有key属性
+		'react/jsx-key': 'error',
+		//防止在JSX中重复的props
+		'react/jsx-no-duplicate-props': 'error',
+		//在JSX中禁止未声明的变量
+		'react/jsx-no-undef': 'error',
+		//为用户定义的JSX组件强制使用PascalCase
+		'react/jsx-pascal-case': 'error',
+		//防止反应被错误地标记为未使用
+		'react/jsx-uses-react': 'error',
+		//防止使用未知的DOM属性
+		'react/no-unknown-property': 'error',
+		//不使用弃用的方法
+		'react/no-deprecated': 'error',
+		//在JSX属性中强制或禁止等号周围的空格
+		'react/jsx-equals-spacing': 'error'
 		/*---------- react lint ---------------*/
 	}
 }
