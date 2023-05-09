@@ -1,6 +1,6 @@
 module.exports = {
 	root: true,
-	ignorePatterns: ['**/*.test.ts'],
+	ignorePatterns: ['**/*.test.ts', 'dist'],
 	env: {
 		browser: true,
 		es2021: true,

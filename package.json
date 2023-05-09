@@ -4,7 +4,8 @@
 	"description": "自己搭建的一个前端脚手架，用于后面自己各个项目的使用",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"babel-build": "npx babel src --out-dir dist --extensions .ts,.tsx"
 	},
 	"keywords": [],
 	"author": "Felix",
