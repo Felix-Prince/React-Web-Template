@@ -1,6 +1,6 @@
 module.exports = {
 	root: true,
-	ignorePatterns: ['**/*.test.ts', 'dist'],
+	ignorePatterns: ['**/*.test.ts', 'dist', '**/webpack.config.ts'],
 	env: {
 		browser: true,
 		es2021: true,
