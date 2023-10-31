@@ -1,22 +1,9 @@
-import React from 'react'
-// import styles from './styles.less'
+// import React from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App'
 
-type AppType = {
-	count: number
-}
+const container = document.getElementById('root') as HTMLElement
 
-const App: React.FC<AppType> = () => {
-	const a = 'xxxx'
-	const lintext = 'bbbb'
-	const arr = ['11', '22', '333']
-	return (
-		<div id='xxx' className='test' title='xxxx' style={{ width: 200 }}>
-			<p>ddddd</p>
-			{arr.map((item) => {
-				return <span key={item}>{item}</span>
-			})}
-		</div>
-	)
-}
+const root = createRoot(container)
 
-export default App
+root.render(<App count={1} />)

@@ -55,7 +55,7 @@ module.exports = {
 		'react/prefer-stateless-function': [2, { ignorePureComponents: true }],
 		// 如果在 react 组件中没有 import React from react 就会报错
 		// 保留这个，因为用到 hooks 肯定会有这个 import { useState } from 'react' 的操作
-		'react/react-in-jsx-scope': 'error',
+		'react/react-in-jsx-scope': 'off',
 		//在数组或迭代器中验证JSX具有key属性
 		'react/jsx-key': 'error',
 		//防止在JSX中重复的props
@@ -65,7 +65,7 @@ module.exports = {
 		//为用户定义的JSX组件强制使用PascalCase
 		'react/jsx-pascal-case': 'error',
 		//防止反应被错误地标记为未使用
-		'react/jsx-uses-react': 'error',
+		'react/jsx-uses-react': 'off',
 		//防止使用未知的DOM属性
 		'react/no-unknown-property': 'error',
 		//不使用弃用的方法

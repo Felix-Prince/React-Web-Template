@@ -61,5 +61,12 @@ module.exports = {
 	output: {
 		filename: 'bundle.js', // 输出文件名
 		path: path.resolve(__dirname, 'dist') // 输出路径
+	},
+	devServer: {
+		// https://github.com/webpack/webpack-dev-server/issues/2866
+		// contentBase 替换成了 static
+		static: path.join(__dirname, 'dist'), // 本地服务器的根目录
+		port: 8080, // 服务器端口
+		hot: true // 启用热模块替换
 	}
 }
