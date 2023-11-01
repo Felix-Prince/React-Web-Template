@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import Demo from './Demo'
 // import styles from './styles.less'
 
 // TODO: 实现 less modules 的方式
@@ -18,6 +19,7 @@ const App: FC<AppType> = () => {
 			{arr.map((item) => {
 				return <span key={item}>{item}</span>
 			})}
+			<Demo />
 		</div>
 	)
 }
