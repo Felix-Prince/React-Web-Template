@@ -27,8 +27,7 @@ module.exports = {
 					{
 						loader: 'css-loader',
 						options: {
-							modules: true, // 启用CSS模块
-							localIdentName: '[name]__[local]--[hash:base64:5]' // 可选的自定义类名格式
+							modules: true // 启用CSS模块
 						}
 					},
 					'less-loader'
