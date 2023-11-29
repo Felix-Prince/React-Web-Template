@@ -1,11 +1,7 @@
 import { FC } from 'react'
 import Demo from './Demo'
-// import styles from './styles.less'
-
-// TODO: 实现 less modules 的方式
-// TODO: 实现 less modules 的方式
-// TODO: 实现 less modules 的方式
-// TODO: 实现 less modules 的方式
+import data from './const.json'
+import styles from './styles.module.less'
 
 type AppType = {
 	count: number
@@ -13,8 +9,15 @@ type AppType = {
 
 const App: FC<AppType> = () => {
 	const arr = ['11', '22', '333']
+	console.log(data)
+	console.log(styles)
 	return (
-		<div id='xxx' className='test' title='xxxx' style={{ width: 200 }}>
+		<div
+			id='xxx'
+			className={styles.myComponent}
+			title='xxxx'
+			style={{ width: 200 }}
+		>
 			<p>ddddd</p>
 			{arr.map((item) => {
 				return <span key={item}>{item}</span>

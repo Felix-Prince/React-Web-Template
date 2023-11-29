@@ -10,7 +10,9 @@
 		"style": "stylelint \"**/*.(css|scss)\" --fix",
 		"lint": "lint-staged",
 		"build": "webpack --config webpack.config.js",
-		"start": "webpack-dev-server --open"
+		"start": "webpack-dev-server --open",
+		"clean:ts": "find . -name '*.tsbuildinfo' -exec rm -f {} +",
+		"dev": "webpack serve --mode development"
 	},
 	"keywords": [],
 	"author": "Felix",
