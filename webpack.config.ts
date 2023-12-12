@@ -16,7 +16,7 @@ module.exports = {
 	mode: 'development',
 	entry: './src/index.tsx', // 入口文件
 	resolve: {
-		extensions: ['.tsx', '.ts', '.js']
+		extensions: ['.tsx', '.ts', '.js', '.less']
 	},
 	module: {
 		rules: [

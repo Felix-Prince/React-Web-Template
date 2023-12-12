@@ -2,6 +2,7 @@ import { FC } from 'react'
 import Demo from './Demo'
 import data from './const.json'
 import styles from './styles.module.less'
+import styless from './styles.less'
 
 type AppType = {
 	count: number
@@ -10,7 +11,7 @@ type AppType = {
 const App: FC<AppType> = () => {
 	const arr = ['11', '22', '333']
 	console.log(data)
-	console.log(styles)
+	console.log(styless)
 	return (
 		<div
 			id='xxx'
@@ -23,6 +24,7 @@ const App: FC<AppType> = () => {
 				return <span key={item}>{item}</span>
 			})}
 			<Demo />
+			<div className={styless.myComponent}>11111111</div>
 		</div>
 	)
 }
